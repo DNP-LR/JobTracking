@@ -4,6 +4,7 @@ import {RouterModule, Routes} from "@angular/router";
 import {MainComponent} from "./main/main.component";
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import {LoginComponent} from "./login/login.component";
+import {RegistrationComponent} from "./registration/registration.component";
 
 
 const routes: Routes= [
@@ -11,7 +12,10 @@ const routes: Routes= [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
-  {path: 'login', component: LoginComponent}
+  {path: 'login', component: LoginComponent},
+  {path: 'registration', component: RegistrationComponent},
+  {path: '', redirectTo: '/registration', pathMatch: 'full'},
+
 ];
 
 @NgModule({
