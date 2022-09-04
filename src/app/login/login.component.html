@@ -1,1 +1,38 @@
-<p>login works!</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Job Track Login Form</title>
+        <link href="login.component.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+    </head>
+    <body>
+        <div class="image">
+            <img src="assets\login.svg">
+           </div>
+          <div class="vertical"></div>
+           <div class="form">
+              <div class="title"><u>Login</u></div>
+             <form action="">
+                 <div class="user-detail">
+                     <div class="input-box">
+                       <span class="detail">Username</span>
+                       <input type="text" placeholder="Enter Your Username" id="UserName" required>
+                       <span class="material-symbols-sharp">
+                        person
+                        </span>
+                     </div>
+                     <div class="input-box">
+                      <span class="detail">Password</span>
+                      <input type="text" name="" placeholder="Enter Your Password" id="Password" required>
+                      <span class="material-symbols-sharp">
+                        key
+                        </span>
+                    </div>
+                  </div>
+                    <div class="button">
+                    <input type="submit"value="Login" routerLink="/main">
+                  </div>
+                  </form>
+           </div>
+    </body>
+</html>

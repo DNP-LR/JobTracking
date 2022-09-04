@@ -1,0 +1,82 @@
+body{
+    font-family: 'poppins', sans-serif;
+    margin:0;
+    padding: 300;
+    background-size: cover;
+}
+.form {
+    top: 150px;
+    left: 50px;
+    position: absolute;
+    text-align:left;
+    margin-left: 50%;
+    padding: 35px 150px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    height: 320px;
+}
+.form .title{
+   font-size: 25px;
+   text-transform: uppercase;
+   font-weight: 700;
+   text-align: center;
+}
+ u{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+ .vertical{
+    border-left: 6px solid;
+    height: 560px;
+    position: absolute;
+    left:50%;
+    border-color: #716
+ };
+ .form form .user-detail{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+form .user-detail .input-box{
+    margin: 10px 0 15px 0;
+    width: 250px
+}
+.user-detail .input-box input .detail{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.user-detail .input-box input{
+    height: 45px;
+    width: 90%;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid rgb(167, 205, 230);
+    padding-left: 17px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 1s ease;
+}
+.user-detail .input-box input:focus,.user-detail .input-box input:valid{
+    border-color:#9b59b6 ;
+}
+.image{
+    top: 150px;
+    left: -120px;
+    position: absolute;
+}
+form .button{
+    height: 60px;
+    margin: 45px 0;
+}
+form .button input{
+    height:50%;
+    width: 50%;
+    color: #fff;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+    font-size: 18px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+form .button input:hover{
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
