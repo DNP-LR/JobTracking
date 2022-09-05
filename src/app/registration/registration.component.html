@@ -1,63 +1,64 @@
-<!DOCTYPE html>
-<html>
- <head>
-   <title> Job Track Register Form</title>
-   <link href="registration.component.css">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
- </head>
- <body>
-    <div class="image">
-      <img src="assets\register1.svg" style="height: 100%">
+<div class="container">
+  <div class="forms-container">
+    <div class="signin-signup">
+      <form action="#" class="sign-in-form">
+        <h2 class="title">Sign in</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <input type="submit" value="Login" class="btn solid" />
+        <p class="social-text">Or Sign in with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
+      <form action="#" class="sign-up-form">
+        <h2 class="title">Sign up</h2>
+        <div class="input-field">
+          <i class="fas fa-user"></i>
+          <input type="text" placeholder="Username" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-envelope"></i>
+          <input type="email" placeholder="Email" />
+        </div>
+        <div class="input-field">
+          <i class="fas fa-lock"></i>
+          <input type="password" placeholder="Password" />
+        </div>
+        <input type="submit" class="btn" value="Sign up" />
+        <p class="social-text">Or Sign up with social platforms</p>
+        <div class="social-media">
+          <a href="#" class="social-icon">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-google"></i>
+          </a>
+          <a href="#" class="social-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </div>
+      </form>
     </div>
-    <div class="vertical"> </div>
-    <div class="form">
-      <div class="title"><u>Register</u></div>
-     <form action="">
-       <div class="user-detail">
-         <div class="input-box">
-           <span class="detail">First Name</span>
-           <input type="text" placeholder="Enter First Name(s)" id="FullName" required>
-         </div>
-         <div class="input-box">
-             <span class="detail">Last Name</span>
-             <input type="text" name="" placeholder="Enter Last Name(s)" id="LastName" required>
-           </div>
-           <div class="input-box">
-             <span class="detail">Password</span>
-             <input type="password" name="" placeholder="Enter Password" id="Password" required>
-           </div>
-                  <div class="input-box">
-                   <span class="detail">Confirm Paasword</span>      
-                   <input type="password" name="" placeholder="Confirm Password" id="Password" required>
-                 </div>
-                 <div class="input-box">
-                  <span class="detail">Email Address</span>
-                  <input type="text" name="" placeholder="Enter Email Address"  id="Email Address" required>
-                 </div>
-                 <div class="input-box">
-                  <span class="detail">Mobile Number</span>
-                  <input type="text" name="" placeholder="Enter Mobile Number" id="Mobile Number" required>
-                 </div>
-               </div>
-                <div class="gender-details">
-                    <input type="radio" name="gender" id="dot1">
-                    <input type="radio" name="gender" id="dot2">
-                    <span class="gender-title">Gender</span>
-                  <div class="category">
-                      <label for="dot1">
-                       <span class="one"></span>
-                       <span class="gender">Male</span>
-                      </label>
-                      <label for="dot2">
-                        <span class="two"></span>
-                        <span class="gender">Female</span>
-                      </label>
-                   </div>
-              </div>
-              <div class="button">
-              <input type="submit"value="Register" routerLink="/main">
-              </div>  
-          </form>
-       </div>
-    </body>
-</html>
+  </div>
+</div>

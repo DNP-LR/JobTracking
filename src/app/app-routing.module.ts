@@ -7,14 +7,14 @@ import {RegistrationComponent} from "./registration/registration.component";
 
 
 const routes: Routes= [
-  {path: 'main', component: MainComponent},
-  {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path:'', redirectTo: '/dashboard', pathMatch: 'full'},
-  {path: 'login', component: LoginComponent},
+  {path: '', component: MainComponent, pathMatch: 'full'},
+  {path: 'main', component: MainComponent, pathMatch: 'full'},
   {path: 'registration', component: RegistrationComponent},
   {path: '', redirectTo: '/registration', pathMatch: 'full'},
-
+  {path: 'login', component: LoginComponent},
+  {path: '', redirectTo: '/login', pathMatch: 'full'},
 ];
+
 
 @NgModule({
   declarations: [],
