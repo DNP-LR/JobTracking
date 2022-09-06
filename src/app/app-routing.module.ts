@@ -4,10 +4,11 @@ import {RouterModule, Routes} from "@angular/router";
 import {MainComponent} from "./main/main.component";
 import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
+import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 
 
 const routes: Routes= [
-  {path: '', component: MainComponent, pathMatch: 'full'},
+  {path: '', component: DashboardComponent, pathMatch:'full'},
   {path: 'main', component: MainComponent, pathMatch: 'full'},
   {path: 'registration', component: RegistrationComponent},
   {path: '', redirectTo: '/registration', pathMatch: 'full'},

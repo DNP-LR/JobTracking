@@ -14,7 +14,7 @@ import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
-  
+    
     NavComponent,
        DashboardComponent
   ],

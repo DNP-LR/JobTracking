@@ -1,4 +1,64 @@
-.carousel slide{
-  width: 50%;
-  height: 50%;
+
+.content{
+  height: 80vh;
+  width:100%;
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align:center;
+  color:black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+img{
+  position: absolute;
+}
+.content h1{
+  font-size: 70px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  top:40%;
+  left: 100px;
+  position: absolute;
+}
+.content p{
+  margin: 60px auto;
+  font-size: 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  line-height: 25px;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(25, 14, 87);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  top: 80%;
+}
+span{
+  background: #8717e2;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  z-index: -1;
+  transition: 0.5s;
+}
+button:hover span{
+  width: 100%;
+}
+button:hover{
+  border: none;
 }
