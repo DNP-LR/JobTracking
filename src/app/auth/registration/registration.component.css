@@ -1,11 +1,14 @@
 body{
     font-family: 'poppins', sans-serif;
-    margin:0;
-    padding:30;
+   height:100vh;
     background-size: cover;
+    position: relative;
+    border-color: darkorchid;
+    border: rgb(199, 34, 214);
+    border-radius: 5px;
 }
-.form {
-    top: 150px;
+.form{
+    top: 5px;
     left: 50px;
     position: absolute;
     text-align:left;
@@ -13,7 +16,7 @@ body{
     padding: 35px 150px;
     border-radius: 5px;
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    height: 320px;
+    height: 750px;
 }
 .form .title{
    font-size: 25px;
@@ -26,7 +29,7 @@ body{
 }
  .vertical{
     border-left: 6px solid;
-    height: 560px;
+    height: 750px;
     position: absolute;
     left:50%;
     border-color: #716
@@ -59,10 +62,34 @@ form .user-detail .input-box{
 .user-detail .input-box input:focus,.user-detail .input-box input:valid{
     border-color:#9b59b6 ;
 }
-.image{
-    top: 150px;
-    left: -120px;
-    position: absolute;
+form .gender-details .gender-title{
+    font-size: 20px;
+    font-weight: 500;
+}
+form .gender-details .category{
+    display: flex;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+.gender-details .category label{
+    display: flex;
+    align-items: center;
+}
+.gender-details .category .one,.gender-details .category .two {
+    height: 15px;
+    width: 15px;
+    background: #777;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
+#dot1:checked ~.category label .one,#dot2:checked ~ .category label .two{
+    border-color: #d9d9d9;
+    background: #9b59b6;
+}
+form input[type="radio"]{
+    display: none;
 }
 form .button{
     height: 60px;
@@ -80,11 +107,26 @@ form .button input{
 form .button input:hover{
     background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
+  @media(max-width: 400px){
+    .form{
+        max-width: 100vh;
+    }
+}
+.image{
+    top: 50px;
+    left: 50px;
+    position: absolute;
+    margin-right: 60%;
+
+}
 
 
 
 
 
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
 
 * {
   margin: 0;
@@ -100,7 +142,7 @@ input {
 .container {
   position: relative;
   width: 100%;
-  background-color: #ffffff;
+  background-color: #fff;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -126,15 +168,16 @@ input {
 }
 
 form {
+  size: 10px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: right;
   flex-direction: column;
-  padding: 0rem 5rem;
+  padding: 0rem 3rem;
   transition: all 0.2s 0.7s;
   overflow: hidden;
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
 }
 
 form.sign-up-form {
@@ -153,16 +196,15 @@ form.sign-in-form {
 }
 
 .input-field {
-  max-width: 350px;
-  width: 100%;
-  background-color: #9B59B6FF;
-  margin: 10px 0;
+  max-width: 300px;
+  width: 95%;
+  background-color: #9b59b6;
+  margin: 5px 0;
   height: 55px;
   border-radius: 10px;
-  display: grid;
+  display: inline-grid;
   grid-template-columns: 15% 85%;
-  padding: 0 0.4rem;
-  position: relative;
+  padding: 0 0.2rem;
 }
 
 .input-field i {
@@ -214,13 +256,13 @@ form.sign-in-form {
 }
 
 .social-icon:hover {
-  color: #9B59B6FF;
-  border-color: #9B59B6FF;
+  color: #9b59b6;
+  border-color: #9b59b6;
 }
 
 .btn {
   width: 150px;
-  background-color: #9B59B6FF;
+  background-color: #9b59b6;
   border: none;
   outline: none;
   height: 49px;
@@ -234,7 +276,7 @@ form.sign-in-form {
 }
 
 .btn:hover {
-  background-color: #9B59B6FF;
+  background-color: #9b59b6;
 }
 .panels-container {
   position: absolute;
@@ -254,7 +296,7 @@ form.sign-in-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #b3a6b9 0%, #9b59b6 100%);
+  background-image: linear-gradient(-4deg, #71B7E6FF  50%, #9b59b6 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
@@ -482,7 +524,5 @@ form.sign-in-form {
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
-
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
   }
 }
