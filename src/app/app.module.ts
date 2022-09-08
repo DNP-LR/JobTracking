@@ -3,11 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MainComponent } from './main/main.component';
-import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {NavbarComponent} from "./navbar/navbar.component";
 import { DashboardModule } from './dashboard/dashboard.module';
+import {LoginComponent} from "./auth/login/login.component";
+import {RegistrationComponent} from "./auth/registration/registration.component";
+import {NavbarComponent} from "./layout/navbar/navbar.component";
+import { FooterComponent } from './layout/footer/footer.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     LoginComponent,
     RegistrationComponent,
     NavbarComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
