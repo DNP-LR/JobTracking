@@ -1,88 +1,9 @@
-body{
-    font-family: 'poppins', sans-serif;
-    margin:0;
-    padding:30;
-    background-size: cover;
-}
-.form {
-    top: 150px;
-    left: 50px;
-    position: absolute;
-    text-align:left;
-    margin-left: 50%;
-    padding: 35px 150px;
-    border-radius: 5px;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    height: 320px;
-}
-.form .title{
-   font-size: 25px;
-   text-transform: uppercase;
-   font-weight: 700;
-   text-align: center;
-}
- u{
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
- .vertical{
-    border-left: 6px solid;
-    height: 560px;
-    position: absolute;
-    left:50%;
-    border-color: #716
- }
- .form form .user-detail{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-form .user-detail .input-box{
-    margin: 10px 0 15px 0;
-    width: 250px
-}
-.user-detail .input-box input .detail{
-    display: block;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-.user-detail .input-box input{
-    height: 45px;
-    width: 90%;
-    outline: none;
-    border-radius: 6px;
-    border: 1px solid rgb(167, 205, 230);
-    padding-left: 17px;
-    font-size: 15px;
-    border-bottom-width: 2px;
-    transition: all 1s ease;
-}
-.user-detail .input-box input:focus,.user-detail .input-box input:valid{
-    border-color:#9b59b6 ;
-}
+
 .image{
     top: 150px;
     left: -120px;
     position: absolute;
 }
-form .button{
-    height: 60px;
-    margin: 45px 0;
-}
-form .button input{
-    height:50%;
-    width: 50%;
-    color: #fff;
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-    font-size: 18px;
-    border-radius: 5px;
-    letter-spacing: 3px;
-}
-form .button input:hover{
-    background: linear-gradient(135deg, #71b7e6, #9b59b6);
-}
-
-
-
 
 
 
@@ -261,7 +182,7 @@ form.sign-in-form {
 }
 
 .image {
-  width: 100%;
+  width: 40%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
 }
@@ -295,21 +216,47 @@ form.sign-in-form {
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
+  top: 100%;
 }
 
 .panel p {
   font-size: 0.95rem;
   padding: 0.7rem 0;
+  top: 20%;
+  left: 50%;
 }
 
 .btn.transparent {
-  margin: 0;
-  background: none;
-  border: 2px solid #fff;
-  width: 130px;
-  height: 41px;
-  font-weight: 600;
-  font-size: 0.8rem;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(25, 14, 87);
+  background: transparent;
+  color: rgb(20, 17, 17);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  top: 60%;
+}
+span{
+  background: #8717e2;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn.transparent:hover span{
+  width: 100%;
+}
+.btn.transparent:hover{
+  border: none;
 }
 
 .right-panel .image,

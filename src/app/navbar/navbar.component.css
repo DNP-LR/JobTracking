@@ -1,15 +1,15 @@
 .container-fluid{
     width: 100%;
     margin: auto;
-    padding: 15px 0px;
+    padding: 15px 5px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: rgb(14, 53, 80);
+    background-color: navbar-dark bg-secondary;
     
 }
 .container-fluid:hover{
-    background-color: rgb(143, 24, 179);
+    background-color: rgb(197, 168, 250);
 }
  ul li {
     list-style: none;

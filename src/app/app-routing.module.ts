@@ -5,15 +5,18 @@ import {MainComponent} from "./main/main.component";
 import {LoginComponent} from "./login/login.component";
 import {RegistrationComponent} from "./registration/registration.component";
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
+import {HomeComponent} from "./home/home.component";
 
 
 const routes: Routes= [
-  {path: '', component: DashboardComponent, pathMatch:'full'},
+  {path: '', component: MainComponent, pathMatch:'full'},
   {path: 'main', component: MainComponent, pathMatch: 'full'},
   {path: 'registration', component: RegistrationComponent},
   {path: '', redirectTo: '/registration', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'},
+  {path: 'home', component: HomeComponent},
+  {path: 'dashboard',component: DashboardComponent}
 ];
 
 

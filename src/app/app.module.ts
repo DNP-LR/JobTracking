@@ -8,6 +8,7 @@ import { RegistrationComponent } from './registration/registration.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {NavbarComponent} from "./navbar/navbar.component";
 import { DashboardModule } from './dashboard/dashboard.module';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -17,6 +18,7 @@ import { DashboardModule } from './dashboard/dashboard.module';
     LoginComponent,
     RegistrationComponent,
     NavbarComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

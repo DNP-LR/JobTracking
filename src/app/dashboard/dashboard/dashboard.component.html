@@ -1,24 +1,103 @@
-<div class="grid-container">
-  <h1 class="mat-h1">Dashboard</h1>
-  <mat-grid-list cols="2" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
-      <mat-card class="dashboard-card">
-        <mat-card-header>
-          <mat-card-title>
-            {{card.title}}
-            <button mat-icon-button class="more-button" [matMenuTriggerFor]="menu" aria-label="Toggle menu">
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <mat-menu #menu="matMenu" xPosition="before">
-              <button mat-menu-item>Expand</button>
-              <button mat-menu-item>Remove</button>
-            </mat-menu>
-          </mat-card-title>
-        </mat-card-header>
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-      </mat-card>
-    </mat-grid-tile>
-  </mat-grid-list>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+<div class="container">
+  <aside>
+    <div class="top">
+      <div class="logo">
+        <img src="">
+        <h2>J~Track</h2>
+      </div>
+      <div class="close" id="close-btn">
+        <span class="material-symbols-sharp">
+          close
+       </span>
+      </div>
+    </div>
+    <div class="sidebar">
+      <a href="#" class="active">
+        <span class="material-symbols-sharp">
+          grid_view
+        </span>
+        <h3>DashBoard</h3>
+      </a>
+      <a href="#" class="active">
+        <span class="material-symbols-sharp">
+          person
+        </span>
+        <h3>Users</h3>
+      </a>
+      <a href="#" class="active">
+        <span class="material-symbols-sharp">
+          settings
+        </span>
+        <h3>Settings</h3>
+      </a>
+      <a href="#" class="active">
+        <span class="material-symbols-sharp">
+          monitoring
+        </span>
+        <h3>Statistics</h3>
+      </a>
+      <a href="#" class="active">
+        <span class="material-symbols-sharp">
+          logout
+       </span>
+        <h3>Logout</h3>
+      </a>
+    </div>
+  </aside>
+  <main>
+    <h1>ADMIN DASH</h1>
+    <div class="date">
+      <input type="date">
+    </div>
+    <div class="insights">
+      <div class="recruiters">
+        <span class="material-symbols-sharp">
+          person
+        </span>
+        <div class="middle">
+         <div class="left">
+            <h3>Total Recruiters</h3>
+          </div>
+        </div>
+      </div>
+      <div class="jobseekers">
+        <span class="material-symbols-sharp">
+          person
+        </span>
+        <div class="middle">
+         <div class="left">
+            <h3>Total Jobseekers</h3>
+          </div>
+        </div>
+      </div>
+      <div class="jobs">
+        <span class="material-symbols-sharp">
+          work
+          </span>
+        <div class="middle">
+         <div class="left">
+            <h3>Total Jobs</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="right">
+    <div class="top">
+      <button id="menu-btn">
+        <span class="material-symbols-sharp">menu</span>
+      </button>
+      <div class="toggler">
+        <span class="material-symbols-sharp active">
+          light_mode
+        </span>
+        <span class="material-symbols-sharp">
+         dark_mode
+        </span>
+      </div>
+    </div>
+  </div>
 </div>
+
+
