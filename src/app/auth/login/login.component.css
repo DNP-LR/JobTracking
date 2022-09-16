@@ -1,4 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+.image{
+    top: 150px;
+    left: -120px;
+    position: absolute;
+}
+
+
 
 * {
   margin: 0;
@@ -12,9 +19,9 @@ input {
 }
 
 .container {
-  position: absolute;
+  position: relative;
   width: 100%;
-  background-color: rgb(255, 253, 253);
+  background-color: #ffffff;
   min-height: 100vh;
   overflow: hidden;
 }
@@ -52,11 +59,13 @@ form {
 }
 
 form.sign-up-form {
-  z-index: 3;
-  left: 150px;
-  position: relative;
+  opacity: 0;
+  z-index: 1;
 }
 
+form.sign-in-form {
+  z-index: 2;
+}
 
 .title {
   font-size: 2.2rem;
@@ -65,12 +74,12 @@ form.sign-up-form {
 }
 
 .input-field {
-  max-width: 380px;
+  max-width: 350px;
   width: 100%;
-  background-color: #f0f0f0;
+  background-color: #9B59B6FF;
   margin: 10px 0;
   height: 55px;
-  border-radius: 55px;
+  border-radius: 10px;
   display: grid;
   grid-template-columns: 15% 85%;
   padding: 0 0.4rem;
@@ -111,13 +120,13 @@ form.sign-up-form {
 }
 
 .social-icon {
-  height: 46px;
-  width: 46px;
+  height: 50px;
+  width: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0.45rem;
-  color: rgb(12, 26, 26);
+  color: #333;
   border-radius: 50%;
   border: 1px solid #333;
   text-decoration: none;
@@ -126,13 +135,13 @@ form.sign-up-form {
 }
 
 .social-icon:hover {
-  color: #4481eb;
-  border-color: #4481eb;
+  color: #9B59B6FF;
+  border-color: #9B59B6FF;
 }
 
 .btn {
   width: 150px;
-  background-color: #5995fd;
+  background-color: #9B59B6FF;
   border: none;
   outline: none;
   height: 49px;
@@ -146,7 +155,7 @@ form.sign-up-form {
 }
 
 .btn:hover {
-  background-color: #4d84e2;
+  background-color: #9B59B6FF;
 }
 .panels-container {
   position: absolute;
@@ -166,17 +175,16 @@ form.sign-up-form {
   top: -10%;
   right: 48%;
   transform: translateY(-50%);
-  background-image: linear-gradient(-45deg, #4481eb 0%, #04befe 100%);
+  background-image: linear-gradient(-45deg, #74B659 50%, #9b59b6 100%);
   transition: 1.8s ease-in-out;
   border-radius: 50%;
   z-index: 6;
 }
 
 .image {
-  width: 100%;
+  width: 40%;
   transition: transform 1.1s ease-in-out;
   transition-delay: 0.4s;
-  top: 20%;
 }
 
 .panel {
@@ -208,21 +216,47 @@ form.sign-up-form {
   font-weight: 600;
   line-height: 1;
   font-size: 1.5rem;
+  top: 100%;
 }
 
 .panel p {
   font-size: 0.95rem;
   padding: 0.7rem 0;
+  top: 20%;
+  left: 50%;
 }
 
 .btn.transparent {
-  margin: 0;
-  background: none;
-  border: 2px solid #fff;
-  width: 130px;
-  height: 41px;
-  font-weight: 600;
-  font-size: 0.8rem;
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(25, 14, 87);
+  background: transparent;
+  color: rgb(20, 17, 17);
+  cursor: pointer;
+  position: absolute;
+  overflow: hidden;
+  top: 60%;
+}
+span{
+  background: #8717e2;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left:0;
+  bottom:0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.btn.transparent:hover span{
+  width: 100%;
+}
+.btn.transparent:hover{
+  border: none;
 }
 
 .right-panel .image,
@@ -395,5 +429,6 @@ form.sign-up-form {
   .container.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
+    background: linear-gradient(135deg, #fdfdfd, #000000);
   }
 }
