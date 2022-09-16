@@ -9,7 +9,7 @@ import {LoginComponent} from "./auth/login/login.component";
 import {RegistrationComponent} from "./auth/registration/registration.component";
 import {NavbarComponent} from "./layout/navbar/navbar.component";
 import { FooterComponent } from './layout/footer/footer.component';
-
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [

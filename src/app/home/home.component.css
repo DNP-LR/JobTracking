@@ -1,7 +1,86 @@
-.container{
-    width: fit-content;
-    background: rgba(187, 60, 212, 0.795);
-    border-radius: 15px;
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(purple, turquoise);
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+.home .banner{
+    color: white;
+    font-size: 5rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
+}
+.home button{
+    height: 4rem;
+    width: 18rem;
+    background: wheat;
+    color: blueviolet;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    box-shadow: 0 .3rem .5rem black;
+}
+.home button:hover{
+    letter-spacing: .1rem;
+}
+.home .wave{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 11rem;
+    background: url("/assets/image/home-bg.png");
+    width: 100%;
+    background-size: 100rem 11rem;
+    background-repeat: repeat-x;
+    animation: waves 10s linear infinite;
+}
+.home .wave2{
+    animation-direction: reverse;
+    opacity: .2;
+}
+.home .wave3{
+    animation-direction: reverse;
+    opacity: .2;
+}
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}
+.home .fa-briefcase{
+    position: absolute;
+    font-size: 30rem;
+    opacity: .15;
+    color:rgb(197, 214, 224);
+}
+.home .b1{
+    top: 10%;
+    left: -15rem;
+}
+.home .b2{
+    bottom: 23%;
+    right: -13rem;
+}
+
+.job-content >div{
+    background: rgb(168, 210, 230);
+    padding: 20px;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    transition: all 300ms ease;
+    box-shadow: rgb(179, 92, 92);
 }
 a{
     color: rgb(78, 21, 21);
@@ -42,7 +121,40 @@ p{
 }
 .btn{
     display: inline-block;
-    background-color: rgb(7, 61, 97);
+    background-color: rgb(122, 157, 180);
     padding: 0.5rem 1.5rem;
     margin-top: 4rem;
+}
+
+.job-detail{
+    display: grid;
+    padding: 0 5px;
+    width: fit-content;
+}
+.job-detail h1 {
+    align-items: center;
+}
+.job-detail > h4{
+    color: orchid;
+    font-size: 0.9rem;
+}
+.job-detail >p {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.job-content{
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 1.2rem;
+    padding: 0.2rem 1.1rem;
+}
+@media(max-width:768px){
+    .home .banner{
+        font-size: 4rem;
+    }
+    .home .slogan{
+        font-size: 1.7rem;
+    }
 }
