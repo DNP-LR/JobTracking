@@ -12,12 +12,11 @@ import {HomeComponent} from "./home/home.component";
 
 const routes: Routes= [
   {path: '', component: MainComponent, pathMatch: 'full'},
+  {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'registration', component: RegistrationComponent},
   {path: '', redirectTo: '/registration', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
   {path: '', redirectTo: '/login', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-
   {
     path: 'dashboard-nav', component : NavComponent,
     children:[

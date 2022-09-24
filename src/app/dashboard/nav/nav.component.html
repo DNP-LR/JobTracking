@@ -5,11 +5,12 @@
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="">Home</a>
-      <a mat-list-item routerLink="dashboard-nav">Home Dashboard</a>
-      <button routerLink="admin-settings">admin-settings</button>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+      <a mat-list-item routerLink="/">Home</a>
+      <a mat-list-item routerLink="dashboard-nav">User CV</a>
+      <a mat-list-item routerLink="admin-settings">User CV</a>
+<!--      <button routerLink="admin-settings">admin-settings</button>-->
+<!--      <a mat-list-item href="#">Link 2</a>-->
+<!--      <a mat-list-item href="#">Link 3</a>-->
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,7 +25,7 @@
       </button>
       <span>JobTracking</span>
     </mat-toolbar>
-    
+
     <!-- Add Content Here -->
    <router-outlet></router-outlet>
   </mat-sidenav-content>
