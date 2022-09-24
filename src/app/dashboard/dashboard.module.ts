@@ -13,12 +13,14 @@ import { MatMenuModule } from '@angular/material/menu';
 import {DashboardComponent} from "./dashboard/dashboard.component";
 import { AdminSettingComponent } from './admin-setting/admin-setting.component';
 import {RouterModule} from "@angular/router";
+import { EditProfilComponent } from './edit-profil/edit-profil.component';
 
 @NgModule({
   declarations: [
     NavComponent,
     DashboardComponent,
-    AdminSettingComponent
+    AdminSettingComponent,
+    EditProfilComponent
   ],
   imports: [
     BrowserModule,

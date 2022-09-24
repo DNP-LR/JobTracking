@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import {NavComponent} from "./dashboard/nav/nav.component";
 import {AdminSettingComponent} from "./dashboard/admin-setting/admin-setting.component";
 import {HomeComponent} from "./home/home.component";
+import {EditProfilComponent} from "./dashboard/edit-profil/edit-profil.component";
 
 
 const routes: Routes= [
@@ -24,6 +25,7 @@ const routes: Routes= [
       {path: '', title: 'Main Component',  component: DashboardComponent},
       {path: 'dashboard-nav', component: DashboardComponent},
       {path: 'admin-settings', title: 'Main Component',  component: AdminSettingComponent},
+      {path: 'app-edit-profil', title: 'Main Component',  component: EditProfilComponent},
       {
         path: 'dashboard-nav', loadChildren: () => import ('./dashboard/dashboard.module').then(m => m.DashboardModule)
       },
