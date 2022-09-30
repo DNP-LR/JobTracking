@@ -1,7 +1,29 @@
+.home .text-box {
+    display: flex;
+}
+.text-box h1{
+    font-size: 62px;
+    position: absolute;
+    align-items: center;
+    left: 55px;
+    top: 155px;
+}
+.home .text-box p{
+    font-family: cursive;
+    font-size: 34px;
+    position: absolute;
+    align-items: center;
+    left: 50px;
+}
+.text-box img{
+    position: absolute;
+    right: 55px;
+    margin-top: -220px;
+}
+
 .home{
     min-height: 100vh;
     width: 100vw;
-    background: linear-gradient(purple, turquoise);
     display: flex;
     align-items: center;
     flex-flow: column;
@@ -11,15 +33,17 @@
     position: relative;
     overflow: hidden !important;
 }
-.home .banner{
+.home .text-box.banner{
+    position: absolute;
+    right: 50px;
     color: white;
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .3);
 }
-.home button{
+.home .text-box button{
     height: 4rem;
     width: 18rem;
-    background: wheat;
+    background: rgb(219, 206, 236);
     color: blueviolet;
     cursor: pointer;
     border: none;
@@ -28,6 +52,9 @@
     font-size: 2rem;
     font-weight: 400;
     box-shadow: 0 .3rem .5rem black;
+    position: absolute;
+    align-items: center;
+    
 }
 .home button:hover{
     letter-spacing: .1rem;
@@ -74,13 +101,11 @@
     right: -13rem;
 }
 
-.job-content >div{
-    background: rgb(168, 210, 230);
-    padding: 20px;
-    border-radius: 2rem;
-    margin-top: 1rem;
-    transition: all 300ms ease;
-    box-shadow: rgb(179, 92, 92);
+.job-content h1{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 600;
+    font-family: cursive;
 }
 a{
     color: rgb(78, 21, 21);
@@ -94,14 +119,10 @@ p{
     display: flex;
     justify-content: space-between;
 }
-.content{
-    flex: 0 0 50%;
+.job-content{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding-right: 3rem;
-    margin-top: 125px;
+    justify-content: space-between;
+    margin-top: 5%;
     
 }
 .heading-primary{
@@ -125,11 +146,23 @@ p{
     padding: 0.5rem 1.5rem;
     margin-top: 4rem;
 }
-
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.job-detail:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
 .job-detail{
-    display: grid;
-    padding: 0 5px;
+    flex-basis: 31%;
+    background: #fff3f3 ;
+    padding: 5px 12px;
     width: fit-content;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+    transition: 0.5s;
 }
 .job-detail h1 {
     align-items: center;
@@ -150,11 +183,15 @@ p{
     gap: 1.2rem;
     padding: 0.2rem 1.1rem;
 }
-@media(max-width:768px){
+@media(max-width:700px){
     .home .banner{
         font-size: 4rem;
     }
     .home .slogan{
         font-size: 1.7rem;
     }
+    .row{
+        flex-direction: column;
+    }
+
 }

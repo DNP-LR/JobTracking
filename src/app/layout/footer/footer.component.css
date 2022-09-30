@@ -1,4 +1,56 @@
-h1{
-    background: turquoise;
-    
+.navbar-brand img{
+    width: 5%;
+    height: 5%;
+}
+.container-fluid{
+    width: 100%;
+    margin: auto;
+    padding: 15px 5px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color: rgb(192, 112, 216); 
+}
+.navbar{
+    background-color: transparent;
+}
+.collapse.navbar-nav{
+    align-items: center;
+}
+.navbar-brand img{
+    width: 5%;
+    height: 5%;
+}
+.container-fluid:hover{
+    background-color: rgb(197, 168, 250);
+}
+ ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 25px;
+    align-items: center;
+    position: relative;
+
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(22, 27, 25);
+    text-transform: uppercase;
+}
+ul li ::after{
+    content: '';
+    height: 4px;
+    width: 0;
+    background: palevioletred;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+ul li :hover::after{
+    width: 100%;
+
+}
+.container-fluid .collapse{
+   display: grid;
 }
