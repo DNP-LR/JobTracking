@@ -22,11 +22,11 @@
 
 /* Simple Dash */
 a{
-  color: var(--color-dark);
+  /*color: var(--color-dark);*/
 }
 img{
   display: block;
-  width:100;
+  width : 100px;
 }
 h1{
   font-weight: 800;
@@ -128,7 +128,7 @@ aside .sidebar a.active:hover:before{
 }
 aside .sidebar a.active span{
   color: rgb(123, 5, 128);
-  margin-left: calc(1rem -3px);
+  margin-left: calc(1rem ,-3px);
 }
 aside .sidebar a:hover{
   color: rgb(35, 10, 58);
