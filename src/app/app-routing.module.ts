@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {RouterModule, Routes} from "@angular/router";
 import {MainComponent} from "./main/main.component";
-import {LoginComponent} from "./auth/login/login.component";
-import {RegistrationComponent} from "./auth/registration/registration.component";
 import { DashboardComponent } from './dashboard/dashboard/dashboard.component';
 import {NavComponent} from "./dashboard/nav/nav.component";
 import {AdminSettingComponent} from "./dashboard/admin-setting/admin-setting.component";
-import {HomeComponent} from "./home/home.component";
+import {HomeComponent} from "./layout/home/home.component";
 import {EditProfilComponent} from "./dashboard/edit-profil/edit-profil.component";
+import {RegistrationComponent} from "./auth/registration/registration.component";
+import {LoginComponent} from "./auth/login/login.component";
 
 
 const routes: Routes= [
