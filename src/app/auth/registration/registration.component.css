@@ -96,8 +96,8 @@ form.sign-up-form {
 }
 
 .input-field input::placeholder {
-  color: #aaa;
-  font-weight: 500;
+  color: black;
+  font-weight: 700;
 }
 
 .social-text {

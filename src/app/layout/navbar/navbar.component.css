@@ -1,12 +1,18 @@
 .container-fluid{
     width: 100%;
     margin: auto;
-    padding: 15px 5px;
+    padding: 10px 5px;
     display: flex;
     justify-content: space-between; 
     align-items: center;
-    background-color: navbar-dark bg-secondary;
-    
+    background-color: rgb(192, 112, 216); 
+}
+.navbar{
+    background-color: transparent;
+}
+.navbar-brand img{
+    width: 5%;
+    height: 5%;
 }
 .container-fluid:hover{
     background-color: rgb(197, 168, 250);
