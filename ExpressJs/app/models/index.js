@@ -15,5 +15,8 @@ const db = {} ;
 db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 db.blockchain = require("./blockchain.model.js")(sequelize, Sequelize);
+db.person = require("./person.model.js")(sequelize, Sequelize);
+db.recruiter = require("./recruiter.model")(sequelize, Sequelize);
+db.education = require("./education.model")(sequelize, Sequelize);
 
 module.exports = db;

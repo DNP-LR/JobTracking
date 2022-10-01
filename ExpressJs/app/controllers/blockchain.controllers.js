@@ -1,25 +1,36 @@
 const db = require("../models");
-const Blockchain = db.blockchain;
+const Person = db.person;
 const Op = db.Sequelize.Op;
 
-// Create and Save a New Tutorial
+// Create and Save a New Education
 exports.create = (req, res) => {
 
-  if (!req.body.hash || !req.body.hashOfPrev || !req.body.hashOfPrev) {
-      res.status(400).send({
-        message: "Content can not be empty !"
-      });
+  if (!req.body.FirstName ||
+    !req.body.LastName
+    // !req.body.Password ||
+    // !req.body.Gender ||
+    // !req.body.Email ||
+    // !req.body.PhoneNumber ||
+    // !req.body.DateOfBirth
+  ) {
+    res.status(400).send({
+      message: "Content can not be empty !"
+    });
     return ;
   }
-  const block={
-    hash: req.body.hash,
-    hashOfPrev: req.body.hashOfPrev,
-    nonce: req.body.nonce,
-    data: req.body.data,
-    valid : req.body.valid ? req.body.valid : true
+  const persoiin={
+    FirstName: req.body.FirstName,
+    LastName: req.body.LastName,
+    DateOfBirth: req.body.DateOfBirth,
+    Password: req.body.Password,
+    Email: req.body.Email,
+    Gender: req.body.Gender,
+    Picture: req.body.Picture,
+    PhoneNumber: req.body.PhoneNumber,
+    // valid : req.body.valid ? req.body.valid : true
   };
 
-  Blockchain.create (block)
+  persoiin.create (persoiin)
     .then(data => {
       res.send(data);
 
@@ -27,7 +38,7 @@ exports.create = (req, res) => {
     .catch(err => {
       res.status(500).send({
         message :
-        err.message || "Some error occurred while creating a new Block"
+          err.message || "Some error occurred while creating a new Block"
       });
     });
 };
@@ -36,14 +47,14 @@ exports.findAll = (req, res ) =>{
   const hash = req.query.hash;
   var condition = hash ? {hash: {[Op.iLike]: `%${title}%`}}:null;
 
-  Blockchain.findAll({where : condition})
+  persoiin.findAll({where : condition})
     .then(data => {
       res.send(data);
     })
     .catch(err => {
       res.status(500).send({
         message :
-        err.message || "Some error occurred while retrieving tutorials. "
+          err.message || "Some error occurred while retrieving tutorials. "
       });
     });
 };
@@ -51,7 +62,7 @@ exports.findAll = (req, res ) =>{
 
 // find all hashed data Tutorial
 exports.findAllValidated = (req, res) => {
-  Blockchain.findAll({ where: { valid: true } })
+  persoiin.findAll({ where: { valid: true } })
     .then(data => {
       res.send(data);
     })

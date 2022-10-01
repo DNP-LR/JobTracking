@@ -2,7 +2,7 @@ module.exports = {
   HOST : "localhost",
   USER : "postgres",
   PASSWORD : "q",
-  DB: "jtract",
+  DB: "JTRACK",
   dialect : "postgres",
   pool : {
     max : 5,
